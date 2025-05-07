@@ -1,0 +1,18 @@
+lzc-sdk-version: "0.1"
+name: Life Grid
+package: cloud.lazycat.app.life-grid
+version: 0.0.1
+description: minimalist web app that helps you visualize your time
+homepage: https://github.com/karthicobla/LifeTimeVisualizer
+author: karthicobla
+application:
+  subdomain: pic-smaller
+  background_task: true
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  public_path:
+    - /
+  routes:
+    - /=file:///lzcapp/pkg/content
